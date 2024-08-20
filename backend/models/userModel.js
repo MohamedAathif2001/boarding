@@ -14,7 +14,9 @@ const userSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    usertype: {
+
+    //seeker or giver
+    usertype: {     
         type: String,
         required: true
     },
