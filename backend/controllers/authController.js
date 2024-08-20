@@ -4,6 +4,8 @@ import bcrypt from 'bcryptjs';
 import User from '../models/userModel.js'
 import { generateTokenAndSetCookie } from '../lib/generateToken.js';
 
+//fix returning the password 
+
 export const signup = async (req, res) => {
 
     try {
