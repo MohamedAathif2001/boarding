@@ -16,8 +16,8 @@ app.use(cookieParser());
 app.use('/api/auth', authRoutes);
 app.use('/api/boarding', boardingRoutes)
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
 
     connectMongoDB();
-    console.log('Server started at http://localhost:3000');
+    console.log('Server started at port', process.env.PORT);
 });
