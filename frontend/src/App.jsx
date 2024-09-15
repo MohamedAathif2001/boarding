@@ -1,10 +1,11 @@
 import './App.css'
+import LoginPage from './pages/user/LoginPage'
 
 function App() {
   
   return (
     <>
-      <h1 className='bg-red-400'>Hi from tailwind</h1>
+      <LoginPage/>
     </>
   )
 }
