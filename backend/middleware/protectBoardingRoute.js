@@ -1,6 +1,3 @@
-import User from "../models/userModel.js";
-import jwt from 'jsonwebtoken'
-
 export const protectBoardingRoute = async (req, res, next)=>{
     try {
 

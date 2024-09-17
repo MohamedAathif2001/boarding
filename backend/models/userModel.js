@@ -18,6 +18,8 @@ const userSchema = new mongoose.Schema({
     //seeker or giver
     usertype: {     
         type: String,
+        enum:["seeker","giver"],
+        default:"seeker",
         required: true
     },
     
